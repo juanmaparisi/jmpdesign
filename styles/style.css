@@ -37,15 +37,6 @@ header {
     justify-content: center; 
 }
 
-.nav-link:hover {
-    color: #ffffff;
-    font-size: 25px;
-}
-
-.navbar-toggler {
-    color: transparent;
-}
-
 .navbar-expand-lg .navbar-nav {
     gap: 10px;
 }
@@ -195,7 +186,7 @@ main {
     width: 900px;
     margin: 40px auto;
     padding: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px #A9A9A9;
     margin-bottom: 5px;
 }
 
@@ -237,6 +228,108 @@ main {
     margin-bottom: 5px;
 }
 
+/*-------------------------------pagina contacto--------------------------*/
+                       /*-------seccion contacto--------*/
+
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto h2 {    
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contacto-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto 60px auto;
+}
+
+.info-card {
+    box-shadow: 0 4px 12px #A9A9A9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card h3 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin: 10px 0 5px;
+}
+
+.info-card p {
+    font-size: 0.95rem;
+    text-align: center;
+    color: #555555;
+    margin: 0;
+}
+
+.info-card img {
+    width: 35px;
+    height: 35px;
+}
+
+.info-card a {
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    align-items: center;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+.behance-icon-card img {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+                             /*-------seccion formulario--------*/
+       
+.formulario {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #A9A9A9;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+       
+.form-label {
+    font-weight: 600;
+}
+       
+.btn-success {
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+}
+
+
 /*-------------------------------footer-----------------------------------*/
 
 footer {
@@ -272,7 +365,7 @@ footer {
 }
 
 
-/*-------------------------------------@medias-------------------------------------*/
+/*-------------------------------------@mediasQ------------------------------------*/
 
 /*-------------------------------@media 768 a 992---------------------------------*/
 

@@ -204,6 +204,7 @@ main {
 .habilidades-contenedor h2 {
     font-size: 1.5rem;
     font-weight: 500;
+    padding-bottom: 10px;
 }
 
 .lineadetiempo-item,
@@ -544,20 +545,18 @@ footer {
     .experiencia h2 {
         font-size: 1.15rem;
     }
+
+    .trayectoria h2,
+    .habilidades-contenedor h2 {
+        text-align: center;
+    }
     
-    .experiencia h3 {
+    .lineadetiempo-item h3,
+    .categoria-habilidad h3 {
         font-size: 1rem;
-    }
+    }   
 
-    .categorias h3 {
-        font-size: 1rem;
-    }
-
-    .categorias h4 {
-        font-size: 1rem;
-    }    
-
-    .categorias ul li a {
+    .lineadetiempo ul li a {
         font-size: 12px;
     }
 

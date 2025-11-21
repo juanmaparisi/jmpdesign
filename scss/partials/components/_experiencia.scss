@@ -1,0 +1,70 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+.experiencia {
+    width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 4px 12px variables.$shadow-color;
+}
+
+.titulo-exp {
+    @include mixins.font-style(1.5rem, 500);
+    text-align: center;
+}
+
+.trayectoria {
+    padding-top: 20px;
+
+    h2 {
+        @include mixins.font-style(1.5rem, 500);
+        padding-bottom: 10px;
+    }
+}
+
+.habilidades-contenedor {
+    padding-top: 20px;
+
+    h2 {
+        @include mixins.font-style(1.5rem, 500);
+        padding-bottom: 10px;
+    }
+}
+
+.categoria-habilidad {
+    margin-top: 25px;
+
+    h3 {
+        @include mixins.font-style(1.2rem, 500);
+        margin-bottom: 10px;
+        border-left: 5px solid variables.$main-color;
+        padding-left: 8px;
+    }
+}
+
+.lineadetiempo-item {
+    margin-top: 25px;
+
+    h3 {
+        @include mixins.font-style(1.2rem, 500);
+        margin-bottom: 10px;
+        border-left: 5px solid variables.$main-color;
+        padding-left: 8px;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 
+        5px;
+    }
+
+    ul ul {
+        padding-left: 20px;
+        margin: 8px 0;
+
+        li {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+    }
+}

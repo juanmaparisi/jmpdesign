@@ -1,0 +1,33 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+footer {
+    @include mixins.flex(row, space-between, center);
+    padding: 10px 30px;
+    background-color: variables.$main-color;
+}
+
+.footer-firma {
+
+    p {
+        color: variables.$white;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+}
+
+.redes-sociales {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0;
+
+    a img {
+        @include mixins.size-img(30px, 30px);
+        filter: invert(100%);
+    }
+}
+
+.behance-icon a img {
+    @include mixins.size-img(35px, 35px);
+}

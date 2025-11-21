@@ -82,4 +82,36 @@ header {
   list-style: none;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #2A8E2E;
+}
+
+.footer-firma p {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.redes-sociales {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+}
+.redes-sociales a img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+}
+
+.behance-icon a img {
+  width: 35px;
+  height: 35px;
+}
+
 /*# sourceMappingURL=style.css.map */

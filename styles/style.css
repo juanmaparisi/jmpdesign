@@ -120,6 +120,43 @@ main {
   margin-left: auto;
 }
 
+.habilidades {
+  margin: 32px 0;
+}
+.habilidades h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.lista-habilidades {
+  width: 90%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+  margin: 32px auto 0 auto;
+}
+
+.habilidad-item {
+  display: flex;
+  flex-direction: column;
+}
+.habilidad-item h4 {
+  font-size: 1rem;
+}
+.habilidad-item div {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.habilidad-item figure img {
+  width: 90%;
+  border-radius: 8px;
+}
+
 .experiencia {
   width: 1000px;
   margin: 40px auto;

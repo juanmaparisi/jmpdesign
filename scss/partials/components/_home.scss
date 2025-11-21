@@ -40,3 +40,43 @@ main {
         margin-left: auto;
     }
 }
+
+.habilidades {
+    margin: 32px 0;
+
+    h3 {
+        @include mixins.font-style(1.5rem, 500);
+        text-align: center;
+    }
+}
+
+.lista-habilidades {
+    width: 90%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 16px;
+    margin: 32px auto 0 auto;
+}
+
+.habilidad-item {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    div {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    figure img {
+        width: 90%;
+        border-radius: 8px;
+    }
+}

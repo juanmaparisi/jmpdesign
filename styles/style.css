@@ -184,4 +184,24 @@ footer {
   margin-top: 5px;
 }
 
+.formulario {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #A9A9A9;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.btn-success {
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=style.css.map */

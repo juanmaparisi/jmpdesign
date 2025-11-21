@@ -1,6 +1,8 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
 
+//SECCION CONTACTO
+
 .contacto {
     display: flex;
     flex-direction: column;
@@ -71,4 +73,26 @@
         @include mixins.size-img(20px, 25px);
         margin-top: 5px;
     }
+}
+
+//SECCION FORMULARIO
+
+.formulario {
+    background-color: variables.$white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px variables.$shadow-color;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.btn-success {
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
 }

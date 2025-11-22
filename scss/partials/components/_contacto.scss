@@ -95,4 +95,10 @@
     width: 100%;
     padding: 10px;
     font-weight: 600;
+    background-color: variables.$second-color;
+
+    &:hover {
+        background-color: variables.$second-hover;
+        font-size: 17px;
+    }
 }

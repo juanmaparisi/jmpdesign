@@ -231,7 +231,7 @@ main {
 .trayectoria h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  padding-bottom: 10px;
+  padding: 20px 0;
 }
 
 .habilidades-contenedor {
@@ -250,29 +250,18 @@ main {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 10px;
-  border-left: 5px solid #2A8E2E;
+  border-left: 5px solid #80881C;
   padding-left: 8px;
 }
-
-.lineadetiempo-item {
-  margin-top: 25px;
-}
-.lineadetiempo-item h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 10px;
-  border-left: 5px solid #2A8E2E;
-  padding-left: 8px;
-}
-.lineadetiempo-item p {
+.categoria-habilidad p {
   font-size: 1rem;
   margin-bottom: 5px;
 }
-.lineadetiempo-item ul ul {
+.categoria-habilidad ul ul {
   padding-left: 20px;
   margin: 8px 0;
 }
-.lineadetiempo-item ul ul li {
+.categoria-habilidad ul ul li {
   list-style: none;
   margin-bottom: 5px;
 }
@@ -364,6 +353,11 @@ main {
   width: 100%;
   padding: 10px;
   font-weight: 600;
+  background-color: #80881C;
+}
+.btn-success:hover {
+  background-color: #929E20;
+  font-size: 17px;
 }
 
 footer {

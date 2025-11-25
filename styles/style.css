@@ -196,7 +196,12 @@ main {
   margin: 10px;
   border: 1px solid #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px #A9A9A9;
+  box-shadow: 0 4px 10px #A9A9A9;
+  transition: all 0.3s ease-out;
+}
+.card-habilidad:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px;
 }
 .card-habilidad img {
   width: 30px;

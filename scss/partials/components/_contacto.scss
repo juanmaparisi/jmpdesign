@@ -98,7 +98,6 @@
     background-color: variables.$second-color;
 
     &:hover {
-        background-color: variables.$second-hover;
-        font-size: 17px;
+        background-image: linear-gradient(55deg, variables.$main-color, variables.$second-color);
     }
 }

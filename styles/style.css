@@ -17,9 +17,10 @@ header {
 }
 
 .container-fluid {
-  background-color: #333333;
+  background-color: #ffffff;
   min-height: 70px;
   padding: 0;
+  border-bottom: 0.5px solid #000000;
 }
 
 .navbar-brand {
@@ -29,6 +30,7 @@ header {
 
 .logo-animado {
   animation-duration: 1s;
+  filter: invert(100%);
 }
 .logo-animado:hover {
   animation-name: pulse;
@@ -49,8 +51,9 @@ header {
 }
 
 .nav-item:hover {
-  background-color: #2A8E2E;
+  background-color: #D8E090;
   color: #333333;
+  border-radius: 10px;
 }
 
 .nav-item a {
@@ -86,7 +89,6 @@ header {
 .selector-idioma .globo {
   width: 20px;
   height: 20px;
-  filter: invert(100%);
 }
 .selector-idioma .globo:hover {
   opacity: 0.8;
@@ -121,32 +123,6 @@ header {
 }
 .opciones-idioma:hover .opciones-idioma {
   display: block;
-}
-
-.lenguajes {
-  background-color: #333333;
-  display: flex;
-  padding: 15px 15px 15px 50px;
-}
-.lenguajes ul {
-  margin: 0;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin: auto;
-  color: #333333;
-}
-.lenguajes ul li {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 8px;
-}
-.lenguajes ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  list-style: none;
 }
 
 main {

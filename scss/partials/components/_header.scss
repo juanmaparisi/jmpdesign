@@ -10,9 +10,10 @@ header {
 }
 
 .container-fluid {
-    background-color: variables.$text-color;
+    background-color: variables.$background-header;
     min-height: 70px;
     padding: 0;
+    border-bottom: 0.5px solid variables.$black;
 }
 
 .navbar-brand {
@@ -22,6 +23,7 @@ header {
 
 .logo-animado {
     animation-duration: 1s;
+    filter: invert(100%);
 
     &:hover {
         animation-name: pulse;
@@ -45,8 +47,9 @@ header {
 .nav-item {
 
     &:hover {
-        background-color: variables.$main-color;
+        background-color: variables.$second-hover;
         color: variables.$text-color;
+        border-radius: 10px;
     }
 }
 
@@ -83,7 +86,6 @@ header {
 
         .globo {
             @include mixins.size-img(20px, 20px);
-            filter: invert(100%);
 
             &:hover {
                 opacity: 0.8;
@@ -127,34 +129,7 @@ header {
     }
 }
 
- .lenguajes {
-    background-color: variables.$text-color;
-    display: flex;
-    padding: 15px 15px 15px 50px;
-
-    ul {
-        margin: 0;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        margin: auto;
-        color: variables.$text-color;
-
-        li {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 8px;
-
-            a {
-                color: variables.$white;
-                text-decoration: none;
-                list-style: none;
-            }
-        }
-    }
-}
+ 
 
 
 

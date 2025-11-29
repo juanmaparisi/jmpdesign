@@ -57,7 +57,7 @@ main {
         font-size: variables.$font-size-h2-h3;
         font-weight: 500;
         text-align: center;
-    }
+    }    
 }
 
 .modulos {
@@ -91,5 +91,13 @@ main {
     img {
         @include mixins.size-img(30px, 30px);        
     }
+}
+
+.descubrir-portfolio {    
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+    margin-bottom: 0;
+    font-style: italic;    
 }
 

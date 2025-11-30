@@ -2,10 +2,5 @@
 @use "../utilities/variables";
 
 .portfolio-h2 {
-        font-size: variables.$font-size-h2-h3;
-        font-weight: 600;
-        color: variables.$text-color; 
-        margin-bottom: 30px;
-        text-align: center;
-    
+    color: red; /* Esto debe ganar a #333333 por orden de aparición */
 }

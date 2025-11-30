@@ -227,14 +227,6 @@ main {
   font-style: italic;
 }
 
-.portfolio-h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #333333;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
 .que-ofrezco {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

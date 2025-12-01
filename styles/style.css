@@ -227,6 +227,11 @@ main {
   font-style: italic;
 }
 
+.portfolio-h2 {
+  color: red;
+  text-align: center;
+}
+
 .que-ofrezco {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -646,6 +651,19 @@ footer {
 .behance-icon a img {
   width: 35px;
   height: 35px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar-brand img {
+    width: 150px;
+  }
+  .nav-item a {
+    font-size: 16px;
+  }
+  .lenguajes ul li a img {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

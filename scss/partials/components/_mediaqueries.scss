@@ -1,0 +1,23 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+//HEADER
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .navbar-brand img {
+        width: 150px;
+    }
+
+    .nav-item a {
+        font-size: 16px;
+    }
+
+    .lenguajes ul li a img {
+        width: 12px;
+        height: 12px;
+    }
+
+
+
+}

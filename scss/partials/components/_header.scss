@@ -41,7 +41,6 @@ header {
 
 .navbar-toggler-icon {
     background-image: url('../pages/assets/img/burger-menu-svgrepo-com.svg');
-    filter: invert(100%);
 }
 
 .nav-item {
@@ -59,7 +58,6 @@ header {
 
     &:hover {
         color: variables.$text-color;
-        font-size: 20px;
     }
 }
 

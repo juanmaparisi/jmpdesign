@@ -47,7 +47,6 @@ header {
 
 .navbar-toggler-icon {
   background-image: url("../pages/assets/img/burger-menu-svgrepo-com.svg");
-  filter: invert(100%);
 }
 
 .nav-item:hover {
@@ -63,7 +62,6 @@ header {
 }
 .nav-item a:hover {
   color: #333333;
-  font-size: 20px;
 }
 
 .boton-hablemos {
@@ -717,16 +715,192 @@ footer {
   height: 35px;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 890px) and (max-width: 1099px) {
   .navbar-brand img {
     width: 150px;
   }
   .nav-item a {
     font-size: 16px;
   }
+  .boton-hablemos {
+    font-weight: 300;
+    padding: 4px 20px;
+    border-radius: 5px;
+    margin: 0 15px;
+  }
   .lenguajes ul li a img {
     width: 12px;
     height: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 890px) {
+  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .nav-item a {
+    font-size: 50px;
+  }
+  .boton-hablemos {
+    font-weight: 400;
+    padding: 4px 20px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 15px;
+  }
+}
+@media (min-width: 360px) and (max-width: 768px) {
+  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+    flex-wrap: inherit;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .contacto-cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 75%;
+  }
+}
+@media (min-width: 360px) and (max-width: 890px) {
+  .navbar-brand img {
+    width: 150px;
+  }
+  .navbar-toggler {
+    order: 1;
+    padding: 0;
+    border: 0;
+  }
+  .lenguajes {
+    order: 2;
+  }
+  .navbar-collapse {
+    order: 3;
+  }
+  .lenguajes ul li a img {
+    width: 12px;
+    height: 12px;
+  }
+  .nav-item a {
+    font-size: 18px;
+    padding: 4px 0;
+    text-align: center;
+  }
+}
+@media (min-width: 360px) and (max-width: 768px) {
+  .contacto-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 50%;
+  }
+  .contacto h2 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 992px) {
+  main {
+    margin: 8px 16px;
+    width: 100%;
+  }
+  .intro {
+    width: 90%;
+    padding: 5%;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 25px;
+  }
+  .intro figure {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .intro figure img {
+    max-width: 100%;
+  }
+  .intro-perfil {
+    text-align: justify;
+    align-items: center;
+  }
+  .intro-perfil h1 {
+    font-size: 1.5rem;
+  }
+  .intro-perfil h2 {
+    font-size: 1.15rem;
+  }
+  .intro-perfil p {
+    font-size: 0.75rem;
+    margin-left: 0;
+    text-align: justify;
+  }
+}
+@media (min-width: 360px) and (max-width: 992px) {
+  .habilidades {
+    width: 90%;
+    padding: 0 5%;
+    margin: 36px;
+  }
+  .habilidades h3 {
+    font-size: 1.15rem;
+    text-align: center;
+    width: 90%;
+  }
+  .lista-habilidades {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 0;
+  }
+  .lista-habilidades ul {
+    width: 90%;
+    padding: 0 5%;
+  }
+  .habilidad-item {
+    flex-direction: column;
+  }
+  .habilidad-item div {
+    padding: 0 5%;
+  }
+  .habilidad-item h4 {
+    font-size: 1rem;
+  }
+  .habilidad-item figure {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+@media (min-width: 360px) and (max-width: 992px) {
+  .experiencia {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .experiencia h2 {
+    font-size: 1.15rem;
+  }
+  .trayectoria h2,
+  .habilidades-contenedor h2 {
+    text-align: center;
+  }
+  .lineadetiempo-item h3,
+  .categoria-habilidad h3 {
+    font-size: 1rem;
+  }
+  .lineadetiempo ul li a {
+    font-size: 12px;
+  }
+}
+@media (min-width: 360px) and (max-width: 992px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    width: 100%;
+  }
+  .footer-firma p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .redes-sociales {
+    margin-top: 8px;
+    justify-content: center;
   }
 }
 

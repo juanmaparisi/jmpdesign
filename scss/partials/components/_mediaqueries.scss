@@ -113,151 +113,146 @@
 }
 
 
+//MAIN
 
+//@media 890 a 1099
 
+@media (min-width: 890px) and (max-width: 1099px) {
 
+    .intro-perfil p {
+        font-size: 12px;
+    }
 
+    .habilidades {
 
+        h3 {
+            font-size: 1rem;
+        }
+    }
 
+    .modulos {
+        gap: 10px;
+        padding: 10px;
 
+        .modulo-item {
+            padding: 20px;
 
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
 
+//@media 768 a 890
 
+@media (min-width: 768px) and (max-width: 890px) {
 
+    .intro-perfil {
 
-//CONTACTO
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.7rem;
+        }
+    }    
+
+    .habilidades {
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+    .modulos {
+        gap: 0;
+
+        .modulo-item {
+            padding: 5px;
+
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+//@media 360 a 768
 
 @media (min-width: 360px) and (max-width: 768px) {
 
-    .contacto-cards {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        width: 50%;
-    }
-    .contacto h2 {
-        font-size: 1.25rem;
-    }
-}
-
-//@media 360 a 992
-
-//PAGINA HOME-SECCION INTRO
-
-@media (min-width: 360px) and (max-width: 992px) {
-
-    main {
-        margin: 8px 16px;
-        width: 100%;
-    }
-
     .intro {
-        width: 90%;
-        padding: 5%;
-        grid-template-columns: 1fr;
-        gap: 24px;
-        margin: 25px;
-    }
+        display: flex;
+        flex-direction: column;
 
-    .intro figure {
-        max-width: 200px;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .intro figure img {
-        max-width: 100%;
+        figure img {
+            max-width: 50%;
+            display: block;    
+            margin: 0 auto;
+        }
     }
 
     .intro-perfil {
-        text-align: justify;
-        align-items: center;
+
+        h1 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 0.6rem;
+        }
     }
 
-    .intro-perfil h1 {
-        font-size: 1.50rem;
+    .modulos {
+        flex-direction: column;
+        width: 70%;
+
+        .modulo-item {
+            padding: 0;
+
+            img {
+                width: 19px;
+                height: 19px;
+            }
+
+            h4 {
+                font-size: 0.8rem;
+                margin: 0;
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+
+        }
     }
-
-    .intro-perfil h2 {
-        font-size: 1.15rem;
-    }
-
-    .intro-perfil p {        
-        font-size: 0.75rem;
-        margin-left: 0;
-        text-align: justify;
-    }
-}
-
-//PAGINA HOME-SECCION HABILIDADES
-
-@media (min-width: 360px) and (max-width: 992px) {
 
     .habilidades {
-        width: 90%;
-        padding: 0 5%;
-        margin: 36px;
+
+        h3 {
+            font-size: 1rem;
+        }
     }
 
-    .habilidades h3 {
-        font-size: 1.15rem;
-        text-align: center;
-        width: 90%;
+    .descubrir-portfolio {
+        font-size: 0.8rem;
     }
 
-    .lista-habilidades {
-        grid-template-columns: 1fr;
-        gap: 8px;
-        padding: 0;
-    } 
-
-    .lista-habilidades ul {
-        width: 90%;
-        padding: 0 5%
-    }
-
-    .habilidad-item {
-        flex-direction: column;
-    }
-
-    .habilidad-item div {
-        padding: 0 5%
-    }
-    
-    .habilidad-item h4 {
-        font-size: 1rem;
-    }
-
-    .habilidad-item figure {
-        width: 100%;
-        padding: 0 5%
-    }
 }
 
-//PAGINA EXPERIENCIA
 
-@media (min-width: 360px) and (max-width: 992px) {
 
-    .experiencia {
-        width: 80%;
-        margin: 20px auto;
-    }
-
-    .experiencia h2 {
-        font-size: 1.15rem;
-    }
-
-    .trayectoria h2,
-    .habilidades-contenedor h2 {
-        text-align: center;
-    }
-    
-    .lineadetiempo-item h3,
-    .categoria-habilidad h3 {
-        font-size: 1rem;
-    }   
-
-    .lineadetiempo ul li a {
-        font-size: 12px;
-    }
-}
 

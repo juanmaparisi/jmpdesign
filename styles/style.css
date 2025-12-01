@@ -669,7 +669,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: 0;
   border-bottom: 1px solid #D8E090;
 }
 .footer-seccion-superior h2 {
@@ -739,7 +739,13 @@ footer {
     justify-content: space-evenly;
   }
   .nav-item a {
-    font-size: 50px;
+    font-size: 20px;
+  }
+  .navbar-brand img {
+    width: 150px;
+  }
+  .navbar-collapse {
+    order: 3;
   }
   .boton-hablemos {
     font-weight: 400;
@@ -750,40 +756,37 @@ footer {
   }
 }
 @media (min-width: 360px) and (max-width: 768px) {
-  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
-    flex-wrap: inherit;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .contacto-cards {
-    grid-template-columns: repeat(2, 1fr);
-    width: 75%;
-  }
-}
-@media (min-width: 360px) and (max-width: 890px) {
   .navbar-brand img {
-    width: 150px;
+    width: 120px;
   }
-  .navbar-toggler {
+  .boton-hablemos {
     order: 1;
-    padding: 0;
-    border: 0;
+    font-weight: 400;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 8px;
   }
-  .lenguajes {
+  .selector-idioma {
     order: 2;
+  }
+  .selector-idioma .globo {
+    width: 15px;
+    height: 15px;
+    margin: 0;
   }
   .navbar-collapse {
     order: 3;
   }
-  .lenguajes ul li a img {
-    width: 12px;
-    height: 12px;
-  }
-  .nav-item a {
-    font-size: 18px;
-    padding: 4px 0;
+}
+@media (min-width: 360px) and (max-width: 768px) {
+  .footer-seccion-superior {
+    flex-direction: column;
     text-align: center;
+  }
+  .redes-sociales {
+    margin: 10px 0;
+    justify-content: center;
   }
 }
 @media (min-width: 360px) and (max-width: 768px) {
@@ -884,23 +887,6 @@ footer {
   }
   .lineadetiempo ul li a {
     font-size: 12px;
-  }
-}
-@media (min-width: 360px) and (max-width: 992px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-    padding: 8px 16px;
-    gap: 10px;
-    width: 100%;
-  }
-  .footer-firma p {
-    font-size: 12px;
-    text-align: center;
-  }
-  .redes-sociales {
-    margin-top: 8px;
-    justify-content: center;
   }
 }
 

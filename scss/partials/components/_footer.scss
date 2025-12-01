@@ -9,7 +9,7 @@ footer {
 .footer-seccion-superior {
     width: 100%;
     padding: 30px 60px 0 60px;
-    @include mixins.flex(row, space-between, center);    
+    @include mixins.flex(row, space-between, 0);    
     border-bottom: 1px solid variables.$second-hover;
     
     h2 {

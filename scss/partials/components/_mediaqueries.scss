@@ -2,23 +2,11 @@
 @use "../utilities/mixins";
 
 
-@media (min-width: 768px) and (max-width: 1200px) {
 
-
-}
-
-
-
-
-
-
-
-//----------------------------------------------------------------
-
-//@media 768 a 1037
 
 //HEADER
 
+//@media 890 a 1099
 
 @media (min-width: 890px) and (max-width: 1099px) {
 
@@ -43,6 +31,7 @@
     }
 }   
 
+//@media 768 a 890
 
 @media (min-width: 768px) and (max-width: 890px) {
 
@@ -52,7 +41,15 @@
     }
 
     .nav-item a {
-        font-size: 50px;
+        font-size: 20px;
+    }
+
+    .navbar-brand img {
+        width: 150px;
+    }         
+    
+    .navbar-collapse {
+        order: 3;
     }
 
     .boton-hablemos {
@@ -61,67 +58,72 @@
         border-radius: 5px;
         margin: 0;
         font-size: 15px;
-    }
+    }      
 
 }
 
-@media (min-width: 360px) and (max-width: 768px) {
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
-        flex-wrap: inherit;
-        justify-content: space-between;
-    }
-    
-    
-}
+//@media 360 a 768
 
-
-
-//CONTACTO
-
-@media (min-width: 768px) and (max-width: 992px) {
-
-    .contacto-cards {
-        grid-template-columns: repeat(2, 1fr);
-        width: 75%;
-    }
-}
-
-
-//@media 360 a 890
-
-//HEADER
-
-@media (min-width: 360px) and (max-width: 890px) {
+@media (min-width: 360px) and (max-width: 768px) {    
 
     .navbar-brand img {
-        width: 150px;
+        width: 120px;
     }
     
-    .navbar-toggler {
+    .boton-hablemos {
         order: 1;
-        padding: 0;
-        border: 0;
-    }
-    
-    .lenguajes {
+        font-weight: 400;
+        padding: 10px 10px;
+        border-radius: 5px;
+        margin: 0;
+        font-size: 8px;
+    }  
+
+    .selector-idioma {
         order: 2;
-    }    
-    
+
+        .globo {
+            width: 15px;
+            height: 15px;
+            margin: 0;
+        }
+    }
+
     .navbar-collapse {
-        order: 3;
-    }
+    order: 3;
+}
+}
 
-    .lenguajes ul li a img {
-        width: 12px;
-        height: 12px;
-    }
+//FOOTER
 
-    .nav-item a {
-        font-size: 18px;
-        padding: 4px 0;
+//@media 360 a 768
+
+
+@media (min-width: 360px) and (max-width: 768px) {
+
+    .footer-seccion-superior {
+        flex-direction: column;
         text-align: center;
     }
+
+    .redes-sociales {
+        margin: 10px 0;
+        justify-content: center;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //CONTACTO
 
@@ -259,25 +261,3 @@
     }
 }
 
-//FOOTER
-
-@media (min-width: 360px) and (max-width: 992px) {
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-        padding: 8px 16px;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .footer-firma p {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .redes-sociales {
-        margin-top: 8px;
-        justify-content: center;
-    }
-}

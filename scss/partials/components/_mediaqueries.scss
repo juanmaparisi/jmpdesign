@@ -1,7 +1,6 @@
 @use "../utilities/variables";
 @use "../utilities/mixins";
-
-
+@use "../utilities/extend";
 
 
 //HEADER
@@ -398,3 +397,70 @@
 }
 
 
+//media 360 a 1099
+
+@media (min-width: 360px) and (max-width: 1099px) {
+
+    .trayectoria {
+        width: 75%;
+
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .categoria-habilidad {
+
+        h3 {
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+}
+
+//EXPERIENCIA
+
+//media 768 a 1099
+
+@media (min-width: 768px) and (max-width: 1099px) {
+
+    .certificaciones {
+
+        h3 {
+            font-size: 1.1rem;
+        }
+    }
+
+    .modulos-certif {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+//media 360 a 768
+
+@media (min-width: 360px) and (max-width: 768px) {
+
+    .modulos-certif {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+//CONTACTO
+
+//media 360 a 890
+
+@media (min-width: 360px) and (max-width: 890px) {
+
+    .contacto-cards {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+}

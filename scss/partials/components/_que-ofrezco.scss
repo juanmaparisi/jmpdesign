@@ -1,5 +1,7 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
+@use "../utilities/extend";
+
 
 .que-ofrezco {
     display: grid;

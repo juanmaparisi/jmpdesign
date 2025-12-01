@@ -1,5 +1,6 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
+@use "../utilities/extend";
 
 footer {
     @include mixins.flex(column, space-between, center);

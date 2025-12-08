@@ -291,7 +291,9 @@ main {
 }
 .carousel-caption h4 {
   margin-bottom: 0.1rem;
-  color: #A9A9A9;
+  color: #333333;
+  background-color: #e2e9ae;
+  border-radius: 8px;
 }
 
 .que-ofrezco {

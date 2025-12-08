@@ -56,7 +56,9 @@
 
     h4 {
         margin-bottom: 0.1rem;
-        color: variables.$shadow-color; 
+        color: variables.$text-color; 
+        background-color: variables.$second-hover;
+        border-radius: 8px;
     }
 }
 

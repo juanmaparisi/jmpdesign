@@ -2,6 +2,11 @@
 @use "../utilities/variables";
 @use "../utilities/extend";
 
+
+body {
+    background-color: variables.$background-color;
+}
+
 //SECCION CONTACTO
 
 .contacto {

@@ -2,6 +2,9 @@
 @use "../utilities/variables";
 @use "../utilities/extend";
 
+body {
+    background-color: variables.$background-color;
+}
 
 .que-ofrezco {
     display: grid;

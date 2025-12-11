@@ -75,15 +75,15 @@
         padding: 10px 10px;
         border-radius: 5px;
         margin: 0;
-        font-size: 8px;
+        font-size: 14px;
     }  
 
     .selector-idioma {
         order: 2;
 
         .globo {
-            width: 15px;
-            height: 15px;
+            width: 20px;
+            height: 20px;
             margin: 0;
         }
     }
@@ -109,17 +109,24 @@
         margin: 10px 0;
         justify-content: center;
     }
+
+    .footer-firma {
+
+        p {
+            text-align: center;
+        }
+    }
 }
 
 
-//MAIN
+//HOME
 
 //@media 890 a 1099
 
 @media (min-width: 890px) and (max-width: 1099px) {
 
     .intro-perfil p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .habilidades {
@@ -137,7 +144,7 @@
             padding: 20px;
 
             p {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
         }
     }
@@ -158,7 +165,7 @@
         }
 
         p {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
         }
     }    
 
@@ -176,7 +183,7 @@
             padding: 5px;
 
             p {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
         }
     }
@@ -211,13 +218,13 @@
 
         p {
             text-align: justify;
-            font-size: 0.6rem;
+            font-size: 0.9rem;
         }
     }
 
     .modulos {
         flex-direction: column;
-        width: 70%;
+        width: 90%;
 
         .modulo-item {
             padding: 0;
@@ -228,12 +235,12 @@
             }
 
             h4 {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 margin: 0;
             }
 
             p {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
 
         }
@@ -247,12 +254,29 @@
     }
 
     .descubrir-portfolio {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
 }
 
-//PORFOLIO
+//PORTFOLIO
+
+@media (min-width: 360px) and (max-width: 768px) {
+
+    .proyecto-item {
+
+        .contenedor-enlace {
+
+            .enlace-superior {
+                font-size: 0.9rem;
+            }
+            
+        }
+    }
+}
+
+
+//QUE OFREZCO
 
 //media 890 a 1099
 
@@ -265,7 +289,7 @@
         }
 
         p {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
     }
 
@@ -277,7 +301,7 @@
             padding: 20px;
 
             p {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
         }
     }
@@ -295,7 +319,7 @@
         }
 
         p {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
     }
 
@@ -306,7 +330,7 @@
             padding: 5px;
 
             p {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
         }
     }
@@ -324,7 +348,7 @@
         }
 
         p {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
         }
     }  
 
@@ -335,23 +359,32 @@
 @media (min-width: 360px) and (max-width: 768px) {
 
     .que-ofrezco {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
         margin: 0 auto;
-        width: 80%;
+        width: 95%;        
 
         h2 {
+            grid-column: 1/-1;
             font-size: 1.2rem;
+            margin-bottom: 10px;
         }
 
         .card-habilidad {
             gap: 5px;
-            margin: 10px 30px;
-            padding: 20px 40px;
-            min-height: 200px;
+            margin: 10px 0;
+            padding: 10px;
+            min-height: auto;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
 
             p {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
+                text-align: left;
             }
         }
 
@@ -362,7 +395,7 @@
 
     .modulos-pq-elegirnos {
         flex-direction: column;
-        width: 70%;
+        width: 90%;
 
         .modulo-item {
             padding: 0;
@@ -373,29 +406,31 @@
             }
 
             h4 {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 margin: 0;
             }
 
             p {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
 
         }
     }
 
     .porque-elegirnos {
+        margin: 25px;
 
         h3 {
             font-size: 1rem;
         }
 
         p {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
         }
     }
 }
 
+//EXPERIENCIA
 
 //media 360 a 1099
 
@@ -422,8 +457,6 @@
 
 }
 
-//EXPERIENCIA
-
 //media 768 a 1099
 
 @media (min-width: 768px) and (max-width: 1099px) {
@@ -446,9 +479,40 @@
 
 @media (min-width: 360px) and (max-width: 768px) {
 
+    .trayectoria {
+        width: 90%;
+        padding: 20px;
+
+        h2 {
+            padding: 5px 0;
+        }
+    }
+
     .modulos-certif {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 16px;
+        width: 95%;
+        margin: 10px auto;
+
+            .modulo-item-certif {
+                padding: 16px 10px;
+                width: 100%;
+                height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        max-height: 120px;
+                        object-fit: contain;
+                    }
+
+                    h4 {
+                        font-size: 0.95rem;
+                        margin-top: 8px;
+                    }
+            }
     }
 }
 
@@ -459,8 +523,52 @@
 @media (min-width: 360px) and (max-width: 890px) {
 
     .contacto-cards {
-        display: flex;
-        flex-direction: column;
-        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        width: 90%;
+        min-height: 300px;
+
+        .info-card {
+            width: 100%;
+            padding: 10px;
+            min-height: 150px;
+            height: auto;
+
+            h3 {
+                font-size: 1rem;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 0.9rem;
+                text-align: center;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-bottom: 8px;
+            }
+        }  
+    }
+
+    .preguntas-frecuentes {
+        padding: 0;
+    }
+
+    .proyectos-descripcion {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        margin: 20px auto;
+        gap: 16px;
+
+        .proyecto-item {
+
+            h4 {
+                font-size: 1.1rem;
+            }
+        }
     }
 }

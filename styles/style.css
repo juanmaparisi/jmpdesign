@@ -8,7 +8,7 @@
   font-family: "Raleway", sans-serif;
 }
 
-.info-card, .formulario, .card-habilidad {
+.info-card, .formulario, .card-habilidad, .proyectos-descripcion .proyecto-item {
   border-radius: 8px;
   box-shadow: 0 4px 12px #A9A9A9;
   padding: 20px;
@@ -143,6 +143,10 @@ header {
   display: block;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 main {
   margin: 32px;
 }
@@ -243,6 +247,10 @@ main {
   font-style: italic;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 .portfolio-h2 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -269,24 +277,6 @@ main {
   border-radius: 8px;
 }
 
-.contenedor-enlace {
-  text-align: center;
-}
-.contenedor-enlace .enlace-superior {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: #2A8E2E;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.contenedor-enlace .enlace-superior .imagen-enlace {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
 .carousel-caption h3 {
   margin-bottom: 0.1rem;
   color: #ffffff;
@@ -296,6 +286,64 @@ main {
   color: #333333;
   background-color: #e2e9ae;
   border-radius: 8px;
+}
+
+.proyectos-descripcion {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto 40px auto;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.proyectos-descripcion .portfolio-h3 {
+  font-size: 1.5rem;
+  grid-column: 1/-1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.proyectos-descripcion .proyecto-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  background-color: #ffffff;
+}
+.proyectos-descripcion .proyecto-item h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.proyectos-descripcion .proyecto-item p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.contenedor-enlace {
+  margin-top: 20px;
+}
+.contenedor-enlace .enlace-superior {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  color: #2A8E2E;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contenedor-enlace .enlace-superior .imagen-enlace {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+body {
+  background-color: #fafafa;
 }
 
 .que-ofrezco {
@@ -391,6 +439,10 @@ main {
 .modulo-item img {
   width: 30px;
   height: 30px;
+}
+
+body {
+  background-color: #fafafa;
 }
 
 .titulo-exp {
@@ -493,6 +545,10 @@ main {
 .modulo-item-certif a {
   font-size: 15px;
   margin-bottom: 5px;
+}
+
+body {
+  background-color: #fafafa;
 }
 
 .contacto {
@@ -753,14 +809,14 @@ footer {
     padding: 10px 10px;
     border-radius: 5px;
     margin: 0;
-    font-size: 8px;
+    font-size: 14px;
   }
   .selector-idioma {
     order: 2;
   }
   .selector-idioma .globo {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     margin: 0;
   }
   .navbar-collapse {
@@ -776,10 +832,13 @@ footer {
     margin: 10px 0;
     justify-content: center;
   }
+  .footer-firma p {
+    text-align: center;
+  }
 }
 @media (min-width: 890px) and (max-width: 1099px) {
   .intro-perfil p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .habilidades h3 {
     font-size: 1rem;
@@ -792,7 +851,7 @@ footer {
     padding: 20px;
   }
   .modulos .modulo-item p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 768px) and (max-width: 890px) {
@@ -803,7 +862,7 @@ footer {
     font-size: 1rem;
   }
   .intro-perfil p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .habilidades h3 {
     font-size: 1rem;
@@ -815,7 +874,7 @@ footer {
     padding: 5px;
   }
   .modulos .modulo-item p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 360px) and (max-width: 768px) {
@@ -838,11 +897,11 @@ footer {
   }
   .intro-perfil p {
     text-align: justify;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
   .modulos {
     flex-direction: column;
-    width: 70%;
+    width: 90%;
   }
   .modulos .modulo-item {
     padding: 0;
@@ -852,17 +911,22 @@ footer {
     height: 19px;
   }
   .modulos .modulo-item h4 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0;
   }
   .modulos .modulo-item p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .habilidades h3 {
     font-size: 1rem;
   }
   .descubrir-portfolio {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 768px) {
+  .proyecto-item .contenedor-enlace .enlace-superior {
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 890px) and (max-width: 1099px) {
@@ -870,7 +934,7 @@ footer {
     font-size: 1rem;
   }
   .porque-elegirnos p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .modulos-pq-elegirnos {
     gap: 10px;
@@ -880,7 +944,7 @@ footer {
     padding: 20px;
   }
   .modulos-pq-elegirnos .modulo-item p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 768px) and (max-width: 890px) {
@@ -888,7 +952,7 @@ footer {
     font-size: 1rem;
   }
   .porque-elegirnos p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .modulos {
     gap: 0;
@@ -897,7 +961,7 @@ footer {
     padding: 5px;
   }
   .modulos .modulo-item p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1099px) {
@@ -905,34 +969,42 @@ footer {
     font-size: 1rem;
   }
   .card-habilidad p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 360px) and (max-width: 768px) {
   .que-ofrezco {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
     margin: 0 auto;
-    width: 80%;
+    width: 95%;
   }
   .que-ofrezco h2 {
+    grid-column: 1/-1;
     font-size: 1.2rem;
+    margin-bottom: 10px;
   }
   .que-ofrezco .card-habilidad {
     gap: 5px;
-    margin: 10px 30px;
-    padding: 20px 40px;
-    min-height: 200px;
+    margin: 10px 0;
+    padding: 10px;
+    min-height: auto;
+  }
+  .que-ofrezco .card-habilidad img {
+    width: 20px;
+    height: 20px;
   }
   .que-ofrezco .card-habilidad p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    text-align: left;
   }
   .que-ofrezco h3 {
     font-size: 1rem;
   }
   .modulos-pq-elegirnos {
     flex-direction: column;
-    width: 70%;
+    width: 90%;
   }
   .modulos-pq-elegirnos .modulo-item {
     padding: 0;
@@ -942,17 +1014,20 @@ footer {
     height: 19px;
   }
   .modulos-pq-elegirnos .modulo-item h4 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0;
   }
   .modulos-pq-elegirnos .modulo-item p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+  }
+  .porque-elegirnos {
+    margin: 25px;
   }
   .porque-elegirnos h3 {
     font-size: 1rem;
   }
   .porque-elegirnos p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 360px) and (max-width: 1099px) {
@@ -979,16 +1054,76 @@ footer {
   }
 }
 @media (min-width: 360px) and (max-width: 768px) {
+  .trayectoria {
+    width: 90%;
+    padding: 20px;
+  }
+  .trayectoria h2 {
+    padding: 5px 0;
+  }
   .modulos-certif {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+    width: 95%;
+    margin: 10px auto;
+  }
+  .modulos-certif .modulo-item-certif {
+    padding: 16px 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .modulos-certif .modulo-item-certif img {
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+  }
+  .modulos-certif .modulo-item-certif h4 {
+    font-size: 0.95rem;
+    margin-top: 8px;
   }
 }
 @media (min-width: 360px) and (max-width: 890px) {
   .contacto-cards {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 90%;
+    min-height: 300px;
+  }
+  .contacto-cards .info-card {
+    width: 100%;
+    padding: 10px;
+    min-height: 150px;
+    height: auto;
+  }
+  .contacto-cards .info-card h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .contacto-cards .info-card p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .contacto-cards .info-card img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+  }
+  .preguntas-frecuentes {
+    padding: 0;
+  }
+  .proyectos-descripcion {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    margin: 20px auto;
+    gap: 16px;
+  }
+  .proyectos-descripcion .proyecto-item h4 {
+    font-size: 1.1rem;
   }
 }
 

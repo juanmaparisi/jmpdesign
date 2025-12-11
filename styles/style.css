@@ -823,19 +823,6 @@ footer {
     order: 3;
   }
 }
-@media (min-width: 360px) and (max-width: 768px) {
-  .footer-seccion-superior {
-    flex-direction: column;
-    text-align: center;
-  }
-  .redes-sociales {
-    margin: 10px 0;
-    justify-content: center;
-  }
-  .footer-firma p {
-    text-align: center;
-  }
-}
 @media (min-width: 890px) and (max-width: 1099px) {
   .intro-perfil p {
     font-size: 14px;
@@ -1124,6 +1111,19 @@ footer {
   }
   .proyectos-descripcion .proyecto-item h4 {
     font-size: 1.1rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 768px) {
+  .footer-seccion-superior {
+    flex-direction: column;
+    text-align: center;
+  }
+  .redes-sociales {
+    margin: 10px 0;
+    justify-content: center;
+  }
+  .footer-firma p {
+    text-align: center;
   }
 }
 

@@ -93,32 +93,6 @@
 }
 }
 
-//FOOTER
-
-//@media 360 a 768
-
-
-@media (min-width: 360px) and (max-width: 768px) {
-
-    .footer-seccion-superior {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .redes-sociales {
-        margin: 10px 0;
-        justify-content: center;
-    }
-
-    .footer-firma {
-
-        p {
-            text-align: center;
-        }
-    }
-}
-
-
 //HOME
 
 //@media 890 a 1099
@@ -572,3 +546,29 @@
         }
     }
 }
+
+//FOOTER
+
+//@media 360 a 768
+
+
+@media (min-width: 360px) and (max-width: 768px) {
+
+    .footer-seccion-superior {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .footer-firma {
+
+        p {
+            text-align: center;
+        }
+    }
+}
+

@@ -825,10 +825,10 @@ footer {
 }
 @media (min-width: 890px) and (max-width: 1099px) {
   .intro-perfil p {
-    font-size: 14px;
+    font-size: 1rem;
   }
   .habilidades h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .modulos {
     gap: 10px;
@@ -838,7 +838,7 @@ footer {
     padding: 20px;
   }
   .modulos .modulo-item p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 890px) {
@@ -880,11 +880,11 @@ footer {
   }
   .intro-perfil h2 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .intro-perfil p {
     text-align: justify;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .modulos {
     flex-direction: column;
@@ -898,17 +898,17 @@ footer {
     height: 19px;
   }
   .modulos .modulo-item h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0;
   }
   .modulos .modulo-item p {
-    font-size: 0.9rem;
-  }
-  .habilidades h3 {
     font-size: 1rem;
   }
+  .habilidades h3 {
+    font-size: 1.1rem;
+  }
   .descubrir-portfolio {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 360px) and (max-width: 768px) {
@@ -918,10 +918,10 @@ footer {
 }
 @media (min-width: 890px) and (max-width: 1099px) {
   .porque-elegirnos h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .porque-elegirnos p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .modulos-pq-elegirnos {
     gap: 10px;
@@ -997,15 +997,15 @@ footer {
     padding: 0;
   }
   .modulos-pq-elegirnos .modulo-item img {
-    width: 19px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
   }
   .modulos-pq-elegirnos .modulo-item h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0;
   }
   .modulos-pq-elegirnos .modulo-item p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .porque-elegirnos {
     margin: 25px;
@@ -1014,7 +1014,7 @@ footer {
     font-size: 1rem;
   }
   .porque-elegirnos p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 360px) and (max-width: 1099px) {
@@ -1111,6 +1111,9 @@ footer {
   }
   .proyectos-descripcion .proyecto-item h4 {
     font-size: 1.1rem;
+  }
+  .formulario {
+    margin-top: 40px;
   }
 }
 @media (min-width: 360px) and (max-width: 768px) {

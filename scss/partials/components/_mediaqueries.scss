@@ -100,13 +100,13 @@
 @media (min-width: 890px) and (max-width: 1099px) {
 
     .intro-perfil p {
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .habilidades {
 
         h3 {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
     }
 
@@ -118,7 +118,7 @@
             padding: 20px;
 
             p {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
     }
@@ -187,12 +187,12 @@
 
         h2 {
             text-align: center;
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         p {
             text-align: justify;
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
     }
 
@@ -209,12 +209,12 @@
             }
 
             h4 {
-                font-size: 0.9rem;
+                font-size: 1rem;
                 margin: 0;
             }
 
             p {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
 
         }
@@ -223,12 +223,12 @@
     .habilidades {
 
         h3 {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
     }
 
     .descubrir-portfolio {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
 }
@@ -259,11 +259,11 @@
     .porque-elegirnos {
 
         h3 {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         p {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
     }
 
@@ -375,17 +375,17 @@
             padding: 0;
 
             img {
-                width: 19px;
-                height: 19px;
+                width: 20px;
+                height: 20px;
             }
 
             h4 {
-                font-size: 0.9rem;
+                font-size: 1rem;
                 margin: 0;
             }
 
             p {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
 
         }
@@ -399,7 +399,7 @@
         }
 
         p {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
     }
 }
@@ -544,6 +544,10 @@
                 font-size: 1.1rem;
             }
         }
+    }
+
+    .formulario {
+        margin-top: 40px;
     }
 }
 

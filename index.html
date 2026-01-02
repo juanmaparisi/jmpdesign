@@ -540,26 +540,27 @@
                     <p>Completa el formulario y te responderemos en 24/48 horas</p>
                 </div>
 
-                <form class="row g-3"> 
-        
+                <form action="https://formsubmit.co/tu.jmparisi13@gmail.com" method="POST" class="row g-3">
+    
+                    <input type="hidden" name="_next" value="https://juanmaportfolio.vercel.app/#home"> <input type="hidden" name="_captcha" value="false"> <input type="hidden" name="_subject" value="Nuevo mensaje de tu Portfolio!"> 
                     <div class="col-md-6 mb-3">
                         <label for="inputNombre" class="form-label">Nombre completo *</label>
-                        <input type="text" class="form-control" id="inputNombre" placeholder="Tu nombre" required>
+                        <input type="text" name="nombre" class="form-control" id="inputNombre" placeholder="Tu nombre" required>
                     </div>
 
                     <div class="col-md-6 mb-3">
                         <label for="inputCorreo" class="form-label">Correo electrónico *</label>
-                        <input type="email" class="form-control" id="inputCorreo" placeholder="tu@email.com" required>
+                        <input type="email" name="email" class="form-control" id="inputCorreo" placeholder="tu@email.com" required>
                     </div>
 
                     <div class="col-md-6 mb-3">
                         <label for="inputTelefono" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="inputTelefono" placeholder="+54 9 1112345678">
+                        <input type="tel" name="telefono" class="form-control" id="inputTelefono" placeholder="+54 9 1112345678">
                     </div>
 
                     <div class="col-md-6 mb-3">
                         <label for="selectContacto" class="form-label">Preferencia de contacto</label>
-                        <select id="selectContacto" class="form-select">
+                        <select id="selectContacto" name="preferencia_contacto" class="form-select">
                             <option selected>Correo electrónico</option>
                             <option>WhatsApp</option>
                         </select>
@@ -567,12 +568,12 @@
 
                     <div class="col-md-6 mb-3">
                         <label for="inputAsunto" class="form-label">Asunto *</label>
-                        <input type="text" class="form-control" id="inputAsunto" placeholder="Asunto de tu consulta" required>
+                        <input type="text" name="asunto" class="form-control" id="inputAsunto" placeholder="Asunto de tu consulta" required>
                     </div>
 
                     <div class="col-md-6 mb-3">
                         <label for="selectPlazo" class="form-label">Plazo del proyecto</label>
-                        <select id="selectPlazo" class="form-select">
+                        <select id="selectPlazo" name="plazo_proyecto" class="form-select">
                             <option selected>Selecciona un plazo</option>
                             <option>Menos de 1 mes</option>
                             <option>1 - 3 meses</option>
@@ -582,13 +583,12 @@
 
                     <div class="col-12 mb-3">
                         <label for="textareaMensaje" class="form-label">Mensaje *</label>
-                        <textarea class="form-control" id="textareaMensaje" rows="4" placeholder="Contanos sobre tu proyecto o consulta..." required></textarea>
+                        <textarea name="mensaje" class="form-control" id="textareaMensaje" rows="4" placeholder="Contanos sobre tu proyecto o consulta..." required></textarea>
                         <small class="form-text text-muted">Mínimo 10 caracteres</small>
                     </div>
-        
+
                     <div class="col-12">
-                        <button type="submit" class="btn-submit">Enviar Mensaje
-                        </button>
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
                     </div>
                 </form>
             </section>
